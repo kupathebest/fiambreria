@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const {index,login,admin} = require("../controllers/userController")
+const {index, login, admin} = require("../controllers/userController")
 
-/* GET home page. */
+/* Legamos con /users */
 router.get('/', index);
-router.get('/login',login);
 router.get('/admin',admin);
+router.get('/login',login);
+
 
 module.exports = router;
