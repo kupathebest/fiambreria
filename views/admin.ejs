@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="/stylesheets/admin.css">
     <title><% title %></title>
 </head>
 <body>
     <main>
-        <h1>panel de administrador</h1>
+        <h1>Gestión de Productos</h1>
+  
+        <!-- Formulario para agregar productos -->
+        <form id="productForm">
+          <input type="text" id="productName" placeholder="Nombre del producto" required>
+          <input type="text" id="productBrand" placeholder="Marca del producto" required>
+          <input type="text" id="productProvider" placeholder="Proveedor del producto" required>
+          <input type="file" id="productImage" accept="image/*" required>
+          <button type="submit">Agregar Producto</button>
+        </form>
+      
+        <!-- Filtros -->
+        <select id="filterProvider">
+          <option value="">Filtrar por Proveedor</option>
+          <!-- Agregar opciones de proveedores aquí -->
+        </select>
+        
+        <select id="filterBrand">
+          <option value="">Filtrar por Marca</option>
+          <!-- Agregar opciones de marcas aquí -->
+        </select>
+      
+        <label>
+          <input type="checkbox" id="hideProviderProducts"> Ocultar productos del mismo proveedor
+        </label>
+      
+        <!-- Tabla de productos -->
+        <table id="productTable">
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Marca</th>
+              <th>Proveedor</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filas de productos aquí -->
+          </tbody>
+        </table>
         
     </main>
-    
+    <script src="/scripts/admin.js"></script>
 </body>
 </html>
