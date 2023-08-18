@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel='stylesheet' href='/stylesheets/index.css' />
     <title><%= title %></title>
   </head>
   <body>
-      <header>
+      <header id="inicio">
         <img src="https://www.shutterstock.com/shutterstock/photos/643080895/display_1500/stock-vector-image-icon-in-trendy-flat-style-isolated-on-white-background-award-symbol-for-your-web-site-design-643080895.jpg " alt="Logo">
         <h1>nombre de la fiambreria</h1>
         <div class="info">
@@ -19,11 +20,12 @@
         <ul>
           <li><a href="#quesos">Quesos</a></li>
           <li><a href="#fiambres">Fiambres</a></li>
-          <li><a href="$otros">Otros</a></li>
+          <li><a href="#otros">Otros</a></li>
         </ul>
       </nav>
       <main>
-        <section id="quesos">
+        <div id="quesos"></div>
+        <section>
           <h2>Quesos</h2>
           <div class="contenedor">
             <article>
@@ -58,7 +60,8 @@
             </article>
           </div>
         </section>
-        <section id="fiambres">
+        <div id="fiambres"></div>
+        <section>
           <h2>Fiambres</h2>
           <div class="contenedor">
             <article>
@@ -93,7 +96,8 @@
             </article>
           </div>
         </section>
-        <section id="otros">
+        <div id="otros"></div>
+        <section>
           <h2>Otros</h2>
           <div class="contenedor">
             <article>
@@ -127,8 +131,9 @@
               <span>$9999</span>
             </article>
           </div>
-
+          <a href="#inicio" class="icono"><i class='bx bxs-chevrons-up'></i></a>
         </section>
       </main>
+      
   </body>
 </html>
