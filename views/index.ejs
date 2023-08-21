@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
     <link rel='stylesheet' href='/stylesheets/index.css' />
     <title><%= title %></title>
   </head>
@@ -13,6 +14,7 @@
         <h1>nombre de la fiambreria</h1>
         <div class="info">
           <P>9 de Julio 1927 Lanus Este</P>
+          <br>  
           <p>11-1111-1111</p>
         </div>
       </header>
@@ -27,7 +29,7 @@
         <div id="quesos"></div>
         <section>
           <h2>Quesos</h2>
-          <div class="contenedor">
+          <div class="contenedor" data-aos="zoom-in">
             <article>
               <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/839/products/013-006-006_queso-cremoso-x-100-grs1-f0b6a6eea53cbaa7cb15885195122686-1024-1024.jpg" alt="">
               <p>nombre del producto</p>
@@ -63,7 +65,7 @@
         <div id="fiambres"></div>
         <section>
           <h2>Fiambres</h2>
-          <div class="contenedor">
+          <div class="contenedor" data-aos="zoom-in">
             <article>
               <img src="https://www.tapalquealimentos.com.ar/wp-content/uploads/2013/10/Jamon-Cocido-Tradicional-cuadrado.jpg" alt="Producto">
               <p>nombre del producto</p>
@@ -99,7 +101,7 @@
         <div id="otros"></div>
         <section>
           <h2>Otros</h2>
-          <div class="contenedor">
+          <div class="contenedor" data-aos="zoom-in">
             <article>
               <img src="https://acdn.mitiendanube.com/stores/099/082/products/papas-leq1-d2edbc0524360405f316874545607935-640-0.jpg" alt="">
               <p>nombre del producto</p>
@@ -135,5 +137,9 @@
         </section>
       </main>
       
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
