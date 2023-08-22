@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/login.css">
-    <title><% title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <title>
+        <% title %>
+    </title>
 </head>
+
 <body class="body-login">
     <main>
 
-       <div class="container">
-        <form action="/views/admin.ejs" method="post" class="formulario">
-            <label for="email">usuario</label>
-            <input type="email" name="mail" id="" class="campo">
-            <label for="password">contraseña</label>
-            <input type="password" name="password" id="" class="campo">
-        
-            <button type="submit">ingresar</button>
-        </form>
-       </div>
+        <div class="container">
+            <form action="/views/admin.ejs" method="post" class="formulario">
+                <fieldset class="a-form">
+                    <label for="email">Ingresa tu usuario:
+                        <input type="email" name="mail" id="" class="campo" placeholder="admin....">
+                    </label>
+
+                    <label for="password">Ingresa tu contraseña:
+                        <input type="password" name="password" id="" class="campo" placeholder="1234....">
+                    </label>
+
+                </fieldset>
+
+                <button type="submit" class="boton">ingresar</button>
+
+
+
+
+            </form>
+        </div>
 
     </main>
-    
+
 </body>
+
 </html>
