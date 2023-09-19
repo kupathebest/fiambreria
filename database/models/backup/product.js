@@ -10,15 +10,27 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+        Product.belongsTo(models.Image,{
+            as : 'image'
+    
+        })
+        Product.belongsTo(models.Provider,{
+            as : 'provider'
+    
+        })
+        /*
+     Camera.hasOne(models.Product,{
+        as : 'product',
+        foreignKey: 'cameraId'
+      })*/
     }
-  }
+  };
   Product.init({
     name: DataTypes.STRING,
+    brand:DataTypes.STRING,
     price: DataTypes.INTEGER,
-    image: DataTypes.STRING,
     providerId: DataTypes.INTEGER,
-    brandId: DataTypes.INTEGER
+    imageId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Product',
