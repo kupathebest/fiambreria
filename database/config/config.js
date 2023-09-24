@@ -1,14 +1,12 @@
 require('dotenv').config();
 
 module.exports={
-  "development": {
-    "username": process.env.DB_USERNAME,
-    "password": process.env.DB_PASS,
-    "database": process.env.DB_DATABASE,
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+  development: {
+    username: "root",
+    password: "root",
+    database: "fiambre_db",
+    host: "127.0.0.1",
+    dialect: "mysql"
   },
   "test": {
     "username": "root",
