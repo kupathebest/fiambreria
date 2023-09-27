@@ -3,37 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/admin.css">
     <title><% title %></title>
 </head>
-<body>
+<body class="body-gestion">
     <main>
         <h1>Gestión de Productos</h1>
+        <div class="panel">
+          <form action="" method="post" class="formulario">
+            <form-group class="grupo">
+              <input type="button" value="Agregar producto">
+              <input type="button" value="Proveedores">
+              <input type="button" value="Marcas">
+            </form-group>
+
+
+          </form>
+          
+        </div>
   
-        <!-- Formulario para agregar productos -->
-        <form id="productForm">
-          <input type="text" id="productName" placeholder="Nombre del producto" required>
-          <input type="text" id="productBrand" placeholder="Marca del producto" required>
-          <input type="text" id="productProvider" placeholder="Proveedor del producto" required>
-          <input type="file" id="productImage" accept="image/*" required>
-          <button type="submit">Agregar Producto</button>
-        </form>
-      
-        <!-- Filtros -->
-        <select id="filterProvider">
-          <option value="">Filtrar por Proveedor</option>
-          <!-- Agregar opciones de proveedores aquí -->
-        </select>
-        
-        <select id="filterBrand">
-          <option value="">Filtrar por Marca</option>
-          <!-- Agregar opciones de marcas aquí -->
-        </select>
-      
-        <label>
-          <input type="checkbox" id="hideProviderProducts"> Ocultar productos del mismo proveedor
-        </label>
-      
         <!-- Tabla de productos -->
         <table id="productTable">
           <thead>
@@ -41,12 +32,11 @@
               <th>Producto</th>
               <th>Marca</th>
               <th>Proveedor</th>
+              <th>Precio</th>
               <th>Acciones</th>
             </tr>
           </thead>
-          <tbody>
-            <!-- Filas de productos aquí -->
-          </tbody>
+          
         </table>
         
     </main>

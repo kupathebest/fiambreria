@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 main {
@@ -39,6 +39,19 @@ main {
     color: white;
     font-size: 24px;
 }
+.grupo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px white solid ;
+    background-color: rgba(255, 255, 255, 0.243);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 750px;
+    height: 120px;
+}
 
 .campo {
     display: block;
@@ -58,18 +71,22 @@ select {
     font-size: 16px;
 }
 
-button {
+input {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 15px;
+    width: 140px;
+    height: 70px;
     padding: 10px 20px;
     background-color: #007bff;
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
 }
 
-button:hover {
+input:hover {
     background-color: #0056b3;
 }
 
