@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheets/admin.css">
-    <title><% title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/admin.css">
+  <title>
+    <% title %>
+  </title>
 </head>
+
 <body class="body-gestion">
-    <main>
-        <h1>Gestión de Productos</h1>
-        <div class="panel">
-          <form action="" method="post" class="formulario">
-            <form-group class="grupo">
-              <input type="button" value="Agregar producto">
-              <input type="button" value="Proveedores">
-              <input type="button" value="Marcas">
-            </form-group>
+  <main>
+    <h1>Gestión de Productos</h1>
+    <div class="panel">
+      <form action="" method="post" class="formulario">
+       
+          <div class="grupo1">
+            <div class="prov">
+              <label for="providerFilter">Filtrar por Proveedor:</label>
+              <select id="providerFilter" name="providerFilter">
+                <option value="">Todos los Proveedores</option>
+                <option value="proveedor1">Proveedor 1</option>
+                <option value="proveedor2">Proveedor 2</option>
+
+              </select>
+
+            </div>
+            <div class="bran">
+              <label for="brandFilter">Filtrar por Marca:</label>
+              <select id="brandFilter" name="brandFilter">
+                <option value="">Todas las Marcas</option>
+                <option value="marca1">Marca 1</option>
+                <option value="marca2">Marca 2</option>
+
+              </select>
+            </div>
 
 
-          </form>
-          
-        </div>
-  
-        <!-- Tabla de productos -->
-        <table id="productTable">
-          <thead>
-            <tr>
-              <th>Producto</th>
-              <th>Marca</th>
-              <th>Proveedor</th>
-              <th>Precio</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          
-        </table>
+
+
+            <input type="button" value="Filtrar">
         
-    </main>
-    <script src="/scripts/admin.js"></script>
+
+    </div>
+
+
+
+    <input type="button" value="Agregar">
+    </form>
+    </div>
+
+    <!-- Tabla de productos -->
+    <table id="productTable" class="tabla">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Marca</th>
+          <th>Proveedor</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+
+
+      </tbody>
+    </table>
+
+  </main>
+
 </body>
+
 </html>
