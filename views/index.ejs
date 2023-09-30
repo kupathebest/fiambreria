@@ -32,36 +32,13 @@
         <section>
           <h2>Quesos</h2>
           <div class="contenedor" data-aos="zoom-in">
-            <article>
-              <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/839/products/013-006-006_queso-cremoso-x-100-grs1-f0b6a6eea53cbaa7cb15885195122686-1024-1024.jpg" alt="">
-              <p>nombre del producto</p>
-              <span>$9999</span>
-            </article>
-            <article>
-              <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/839/products/013-006-006_queso-cremoso-x-100-grs1-f0b6a6eea53cbaa7cb15885195122686-1024-1024.jpg" alt="">
-              <p>nombre del producto</p>
-              <span>$9999</span>
-            </article>
-            <article>
-              <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/839/products/013-006-006_queso-cremoso-x-100-grs1-f0b6a6eea53cbaa7cb15885195122686-1024-1024.jpg" alt="">
-              <p>nombre del producto</p>
-              <span>$9999</span>
-            </article>
-            <article>
-              <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/839/products/013-006-006_queso-cremoso-x-100-grs1-f0b6a6eea53cbaa7cb15885195122686-1024-1024.jpg" alt="">
-              <p>nombre del producto</p>
-              <span>$9999</span>
-            </article>
-            <article>
-              <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/839/products/013-006-006_queso-cremoso-x-100-grs1-f0b6a6eea53cbaa7cb15885195122686-1024-1024.jpg" alt="">
-              <p>nombre del producto</p>
-              <span>$9999</span>
-            </article>
-            <article>
-              <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/839/products/013-006-006_queso-cremoso-x-100-grs1-f0b6a6eea53cbaa7cb15885195122686-1024-1024.jpg" alt="">
-              <p>nombre del producto</p>
-              <span>$9999</span>
-            </article>
+            <% productos.forEach(producto => { %>
+              <article>
+                <img src="/images/<%= producto.image %>" alt="">
+                <p><%= producto.name %></p>
+                <span>$ <%= producto.price %></span>
+              </article>
+          <% }) %>
           </div>
         </section>
         <div id="fiambres"></div>

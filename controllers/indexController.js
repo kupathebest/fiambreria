@@ -1,7 +1,17 @@
+const db = require('../database/models');
+const {Op} = require('sequelize');
+
 module.exports = {
     index: (req, res) => {
-        res.render("index",
-         {title: "Fiambreria"}
-         )
+        db.Product.findAll()
+        .then (productos => {
+            /* res.send(productos) */
+            res.render("index",{
+                title: "Fiambreria",
+                productos
+            }
+            )
+        })
+        
     },
 }
