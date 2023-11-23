@@ -1,0 +1,14 @@
+:root {
+    --color-Home: brown;
+    --color-HomeTransparente: rgba(165, 42, 42, 0.26);
+
+}
+
+* {
+    font-family: 'Gothic A1', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
